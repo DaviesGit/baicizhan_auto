@@ -48,17 +48,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-百词斩自动比拼软件。使用方法请自行研究。仅供个人***学习***使用，不可用于其它意图。
+百词斩自动比拼软件。使用方法见下文。仅供个人***学习***使用，不可用于其它意图。
 
 功能:
 * 自动识别当前单词
-* 自动选择单词正确意识
-
-
+* 自动选择单词正确意思
 
 ### Built With
 依赖
-* 无
+* 有 懒得讲
 
 
 
@@ -87,7 +85,12 @@ git clone https://github.com/path/to/the/repository
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. 请自行研究
+1. 模拟器: 夜神模拟器 调整分辨率为`手机版1080*1920` Android设置中调整dpi 文字大小等到最大 调整模拟器窗口为高度505 调整代码([baicizhan_crack_1.1.py](https://github.com/F-Unction/baicizhan_auto/blob/master/baicizhan_crack_1.1.py))内offset为模拟器窗口的`left`和`top`
+2. Tesseract: 下载[chi_sim.traineddata](https://raw.githubusercontent.com/tesseract-ocr/tessdata/4.00/chi_sim.traineddata)到tesseract安装目录的`tessdata`文件夹 调整代码内`tessdata`目录为你的目录
+
+3. OCR: 到[百度AI开放平台](https://ai.baidu.com/tech/ocr)注册账号  创建应用 修改函数`image_to_string_online`
+
+4. 自行测试 调整
 
 
 
@@ -96,7 +99,7 @@ git clone https://github.com/path/to/the/repository
 
 如果需要功能定制，请联系作者 [1182176003@qq.com](1182176003@qq.com)
 
-
+(作者很友善 只要你不让他写代码)
 
 <!-- ROADMAP -->
 
@@ -141,6 +144,18 @@ Davies - [@email](1182176003@qq.com) - 1182176003@qq.com
 * [GitHub](https://github.com/)
 
 
+
+## Q&A
+
+- 被注释的代码(没有调用的函数)?
+
+  是相同功能的不同实现 本人测试的非最佳选择
+
+- 为什么不用tesseract识别英文?
+
+  试过了 效果很差 自己训练模型也试过了 效果同样很差(百词斩所用的字体 本人训练的模型都已给出)
+  
+  
 
 ## 免责声明
 * 该软件中所包含的部分内容，包括文字、图片、音频、视频、软件、代码、以及网页版式设计等可能来源于网上搜集。
